@@ -18,12 +18,12 @@ namespace: instavote
 
 commonLabels:
   project: instavote
-  envs:
-    - staging
+  env: staging
 
 commonAnnotations:
   supported-by: "sre@example.com"
 
 configMapGenerator:
   - name: vote-options
-    envs: options.env
+    envs: 
+      - options.env
